@@ -48,8 +48,8 @@ public class Book {
     public void Discount(double discountPercent) {
         if (discountPercent > 0.0 && discountPercent < 100.0) {
             double discountAmount = (discountPercent / 100.0) * this.price;
-            this.price = this.price - discountAmount;
-            System.out.printf("Discount applied. New price: %.2f%n", discountPercent, this.price);
+            this.price = this.price - discountAmount; // Calculate the amount
+            System.out.printf("Discount applied. New price: %.2f%n", discountPercent, this.price); //updated price
         } else {
             System.out.println("Error: Discount must be between 0.00 and 100.00.");
         }
