@@ -17,7 +17,15 @@ public class Main {
         //test constructor
         Book unknown = new Book();
         unknown.details();
-
+        
+        System.out.println("=========== Discount Testing ===========");
+        myBook.Discount(-20);    // Invalid
+        myBook.Discount(0);      // Invalid
+        myBook.Discount(100);    // Invalid
+        myBook.Discount(150);    // Invalid
+        myBook.Discount(0.5);    // Valid
+        myBook.Discount(25.0);   // Valid
+        
         System.out.println("=========== **Books in stock** ===========");
         //test parameterized
         Book No1Book = new Book("City of Glass");
